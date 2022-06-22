@@ -593,13 +593,16 @@ public class PrograMenu extends javax.swing.JFrame {
             }
             else {
                 txtKembali.setText(Integer.toString(UangBayar - TotalBayar));
+                String Nota=taPesanan.getText();
+                taPesanan.setText(Nota+"\nUang Bayar : "+txtBayar.getText()+"\nUang Kembali : "+txtKembali.getText());
             }
         }
+        
     }//GEN-LAST:event_txtBayarKeyPressed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-               int x;
+            int x;
         x = JOptionPane.showConfirmDialog(null, "Apakah Anda Ingin Keluar?", "Konfirmasi", JOptionPane.YES_NO_OPTION);
         if (x==JOptionPane.YES_NO_OPTION){
             dispose();
